@@ -11,10 +11,13 @@ module.exports = {
         'desktop': '1440px',
       },
       colors:{
-        'dark-cyan': 'hsl(185, 75%, 39%)',
-        'vary-dark-desaturated': 'hsl(229, 23%, 23%)',
-        'dark-grayish-blue': 'hsl(227, 10%, 46%)',
-        'dark-gray': 'hsl(0, 0%, 59%)',
+        'very-dark-desaturated-blue': 'hsl(238, 29%, 16%)', //text color
+        'soft-red': 'hsl(14, 88%, 65%)',                    // text color
+        'very-dark-grayish-blue': 'hsl(237, 12%, 33%)',     // text color
+        'dark-grayish-blue': 'hsl(240, 6%, 50%)',           // text color
+        'soft-violet': 'hsl(273, 75%, 66%)',                // bg gradient
+        'soft-blue': 'hsl(240, 73%, 65%)',                  // bg gradient
+        'light-grayish-blue': 'hsl(240, 5%, 91%)',          // Dividers
       },
       fontSize: {
         '2tiny': '0.9375rem', // 15px
@@ -27,13 +30,23 @@ module.exports = {
         'mobile': '23.4375rem',
         'desktop': '90rem',
       },
+      margin: {
+        '10%' : '10%',
+      },
       spacing:{
       },
+      inset: {
+        '76': '19rem',
+      },
+      backgroundPosition: {
+        '-left-22vw': '-22vw',
+        '-left-53vw': '-53vw',
+        '-top-50vh': '-50vh',
+      },
       backgroundImage: theme => ({
-        'bottom-pattern': "url('/images/bg-pattern-bottom.svg')",
-        'card-pattern': "url('/images/bg-pattern-card.svg')",
-        'top-pattern': "url('/images/bg-pattern-top.svg')",
+        'faq-pattern-desktop': "url('/images/faq-accordion-card/bg-pattern-desktop.svg')"
       }),
+     
     },
   },
   variants: {

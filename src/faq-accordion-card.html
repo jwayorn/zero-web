@@ -5,11 +5,76 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>FAQ accordion card</title>
-   <link rel="stylesheet" href="css/tailwind.css">
+
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="/css/tailwind.css">
+
 </head>
-<body>
-      <h1 class="text-7xl">
-         FAQ accordion card
-      </h1>
+<body class="relative text-xs font-kumbh-sans">
+
+   <section class="relative py-28 px-7 bg-gradient-to-b from-soft-violet to-soft-blue">
+      <!-- row -->
+      <div class="relative max-w-mobile mx-auto bg-white shadow-2xl rounded-xl pt-1 md:max-w-2xl lg:grid lg:grid-cols-2 lg:max-w-4xl">
+
+         <img class="hidden lg:block absolute top-44 -left-24 z-10" src="images/faq-accordion-card/illustration-box-desktop.svg" alt="">
+
+          <!-- col1 -->
+         <div class="lg:relative lg:overflow-hidden faq-bg-pettern-desktop">
+
+            <!-- Mobile image -->
+            <div class="lg:hidden -mt-28">
+               <img src="images/faq-accordion-card/illustration-woman-online-mobile.svg" alt="faq image" class="pr-7 mx-auto">
+               <img src="images/faq-accordion-card/bg-pattern-mobile.svg" alt="bg pattern" class="-mt-20 mx-auto">
+            </div>
+
+            <!-- Desktop Image -->
+            <div class="hidden lg:block -ml-20">
+               <img class="absolute top-12" src="images/faq-accordion-card/illustration-woman-online-desktop.svg" alt="">
+            </div>
+         </div>
+         <!-- end col1 -->
+
+         <!-- col2 -->
+         <div class="p-7 lg:py-20 lg:pr-20">
+
+            <h2 class="uppercase text-very-dark-desaturated-blue font-bold text-3xl text-center p-3 md:p-0 md:mb-7 lg:text-left ">FAQ</h2>
+            <!-- FAQ -->
+            <div>
+               <details>
+                  <summary class="">How many team members can I invite?</summary>
+                  <p class="py-2 text-dark-grayish-blue">You can invite up to 2 additional users on the Free plan. There is no limit on 
+                     team members for the Premium plan.</p>
+               </details>
+
+               <details>
+                  <summary class="">What is the maximum file upload size?</summary>
+                  <p class="py-2 text-dark-grayish-blue">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+               </details>
+
+               <details>
+                  <summary class="">How do I reset my password?</summary>
+                  <p class="py-2 text-dark-grayish-blue">Click “Forgot password” from the login page or “Change password” from your profile page.
+                     A reset link will be emailed to you.</p>
+               </details>
+
+               <details>
+                  <summary class="">Can I cancel my subscription?</summary>
+                  <p class="py-2 text-dark-grayish-blue">Yes! Send us a message and we’ll process your request no questions asked.</p>
+               </details>
+
+               <details>
+                  <summary class="">Do you provide additional support?</summary>
+                  <p class="py-2 text-dark-grayish-blue">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+               </details>
+            </div>
+         </div>
+         <!-- end col2 -->
+
+      </div> 
+      <!-- end row -->
+     
+   </section>
+  
 </body>
 </html>

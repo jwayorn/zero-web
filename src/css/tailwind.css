@@ -2,6 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer components {
+@layer components {
 
-} */
+   details {
+      @apply border-b border-light-grayish-blue py-4;
+   }
+
+   details summary {
+     @apply list-none relative cursor-pointer hover:text-soft-red;
+   }
+
+   details summary::after {
+      content: url(/images/faq-accordion-card/icon-arrow-down.svg);
+      @apply ml-3 absolute right-0;
+   }
+
+   details[open] {
+      @apply font-bold text-very-dark-desaturated-blue;
+   }
+   details[open] summary::after {
+      @apply transform -rotate-180;
+   }
+
+  details[open] summary ~ * {
+     animation: sweep .5s ease-in-out;
+  }
+
+  @keyframes sweep {
+     from {
+      opacity: 0; margin-top: -5px;
+     }
+     to {
+      opacity: 1; margin-top: 0;
+     }
+  }
+
+  @media (min-width: 1024px) {
+      .faq-bg-pettern-desktop{
+         background-image:url(/images/faq-accordion-card/bg-pattern-desktop.svg);
+         background-repeat: no-repeat;
+         background-position: right 72px top -300px;
+      }
+   }
+  
+}
