@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     fontFamily:{
       'kumbh-sans': ['Kumbh Sans', 'sans-serif'],
+      'spartan': ['Spartan', 'sans-serif'],
     },
     extend: {
       screens: {
@@ -18,6 +19,10 @@ module.exports = {
         'soft-violet': 'hsl(273, 75%, 66%)',                // bg gradient
         'soft-blue': 'hsl(240, 73%, 65%)',                  // bg gradient
         'light-grayish-blue': 'hsl(240, 5%, 91%)',          // Dividers
+        'very-dark-magenta': 'hsl(300, 43%, 22%)',
+        'soft-pink': 'hsl(333, 80%, 67%)',
+        'dark-grayish-magenta': 'hsl(303, 10%, 53%)',
+        'light-grayish-magenta': 'hsl(300, 24%, 96%)',
       },
       fontSize: {
         '2tiny': '0.9375rem', // 15px
@@ -43,10 +48,6 @@ module.exports = {
         '-left-53vw': '-53vw',
         '-top-50vh': '-50vh',
       },
-      backgroundImage: theme => ({
-        'faq-pattern-desktop': "url('/images/faq-accordion-card/bg-pattern-desktop.svg')"
-      }),
-     
     },
   },
   variants: {

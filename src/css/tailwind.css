@@ -13,7 +13,7 @@
    }
 
    details summary::after {
-      content: url(/images/faq-accordion-card/icon-arrow-down.svg);
+      content: url(/faq-accordion-card/images/icon-arrow-down.svg);
       @apply ml-3 absolute right-0;
    }
 
@@ -37,12 +37,28 @@
      }
   }
 
+  /* lg */
   @media (min-width: 1024px) {
       .faq-bg-pettern-desktop{
-         background-image:url(/images/faq-accordion-card/bg-pattern-desktop.svg);
+         background-image:url(/faq-accordion-card/images/bg-pattern-desktop.svg);
          background-repeat: no-repeat;
          background-position: right 72px top -300px;
       }
+
+      .social-proof-bg {
+         background-image: url(/social-proof-section/images/bg-pattern-top-desktop.svg), url(/social-proof-section/images/bg-pattern-bottom-desktop.svg) !important;
+         /* background-repeat: no-repeat; */
+         background-position: left top, right bottom !important;
+      }
    }
+
+   /* social proof */
   
+   .social-proof-bg {
+      background-image: url(/social-proof-section/images/bg-pattern-top-mobile.svg), url(/social-proof-section/images/bg-pattern-bottom-mobile.svg);
+      background-repeat: no-repeat;
+      background-position: center top, center bottom;
+   }
+
+
 }
