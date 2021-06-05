@@ -60,5 +60,46 @@
       background-position: center top, center bottom;
    }
 
+   /* 
+    * Article preview 
+    */
+
+   /* https://css-tricks.com/snippets/css/css-triangle/ */
+   #shareModal::before {
+      content: '';
+      position: absolute;
+      bottom: -18px;
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid hsl(217, 19%, 35%);
+      right: calc(100% - 147px);
+   }
+  
+
+
+   @media (min-width:768px){
+
+      #shareModal {
+         left: calc(100% - 151px)
+      }
+
+      /* https://css-tricks.com/snippets/css/css-triangle/ */
+      /* #shareBtn::before {
+         content: '';
+         position: absolute;
+         top: -23px;
+         left: 0;
+         right: 0;
+         width: 0;
+         height: 0;
+         border-left: 20px solid transparent;
+         border-right: 20px solid transparent;
+         border-top: 20px solid hsl(217, 19%, 35%);
+      } */
+
+   }
+   
 
 }
