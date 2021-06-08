@@ -120,6 +120,7 @@
       @apply shadow-xl;
    }
 
+   
    .email-error-noti { display: none; }
    .email-error-msg { display: none; }
    
@@ -139,6 +140,13 @@
    /* -webkit-box-shadow: 0 0 0 30px transparent inset !important; */
       border-radius: 24px;
       /* -webkit-background: transparent; */
+   }
+
+   @media (min-width: 768px) {
+      .base-apparel-bg {
+         background-image: url(/base-apparel-coming-soon/images/bg-pattern-desktop.svg);
+         background-repeat: no-repeat;
+      }
    }
 
 }
