@@ -6,6 +6,7 @@ module.exports = {
       'kumbh-sans': ['Kumbh Sans', 'sans-serif'],
       'spartan': ['Spartan', 'sans-serif'],
       'manrope': ['Manrope', 'sans-serif'],
+      'josefin-sans': ['Josefin Sans', 'sans-serif'],
     },
     extend: {
       screens: {
@@ -13,6 +14,7 @@ module.exports = {
         'desktop': '1440px',
       },
       colors:{
+        // FAQ-accordion-card
         'very-dark-desaturated-blue': 'hsl(238, 29%, 16%)', //text color
         'soft-red': 'hsl(14, 88%, 65%)',                    // text color
         'very-dark-grayish-blue': 'hsl(237, 12%, 33%)',     // text color
@@ -21,15 +23,25 @@ module.exports = {
         'soft-blue': 'hsl(240, 73%, 65%)',                  // bg gradient
         'light-grayish-blue': 'hsl(240, 5%, 91%)',          // Dividers
 
+        // Social proof section
         'very-dark-magenta': 'hsl(300, 43%, 22%)',
         'soft-pink': 'hsl(333, 80%, 67%)',
         'dark-grayish-magenta': 'hsl(303, 10%, 53%)',
         'light-grayish-magenta': 'hsl(300, 24%, 96%)',
 
+        // article-preview-component
         'very-dark-grayish-blue-2': 'hsl(217, 19%, 35%)',
         'disaturated-dark-blue': 'hsl(214, 17%, 51%)',
         'grayish-blue': 'hsl(212, 23%, 69%)',
         'light-grayish-blue': 'hsl(210, 46%, 95%)',
+
+        // base-apparel-coming-soon
+         // ### Primary
+        'desaturated-red': 'hsl(0, 36%, 70%)',
+        'soft-red': 'hsl(0, 93%, 68%)',
+         // ### Neutral
+         'dark-grayish-red': 'hsl(0, 6%, 24%)',
+
       },
       fontSize: {
         'xxs': '0.8125rem', //13px
@@ -62,7 +74,8 @@ module.exports = {
         '76': '19rem',
       },
       letterSpacing: {
-        'very-wide': '0.3rem',
+        'very-wide': '0.3em',
+        'very-wider': '1.3em'
       },
       backgroundPosition: {
         '-left-22vw': '-22vw',

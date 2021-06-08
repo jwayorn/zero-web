@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+   <title>Base apparel coming soon</title>
+
+   <link rel="stylesheet" href="../css/tailwind.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+   <body class="font-josefin-sans">
+      <div class="container mx-auto">
+
+         <!-- row-1 -->
+         <div class="md:grid md:grid-cols-2">
+
+             <!-- col-1 -->
+               <div class="hero-gradient-1 bg-desaturated-red">
+
+                  <!-- content wrap -->
+                  <div class="lg:pt-10 lg:px-16 xl:px-40">
+
+                     <!-- logo -->
+                     <div class="p-7 w-auto lg:p-0 lg:mb-20 xl:mb-28">
+                        <a href="/">
+                        <img class="h-5 lg:h-9" src="images/logo.svg" alt="">
+                        </a>
+                     </div>
+                     <!-- end logo -->
+                     
+                     <!-- hero image mobile -->
+                     <img class="sm:mx-auto md:hidden" src="images/hero-mobile.jpg"  alt="">
+                     <!-- end hero image mobile -->
+
+                     <!-- hero detail -->
+                     <div class="text-center py-14 px-9 sm:py-3 md:text-left lg:py-0 lg:px-0">
+                        <h1 class="mb-4 lg:tracking-very-wider">
+                           <span class="text-4xl font-light uppercase text-desaturated-red lg:text-5xl">We're</span> <br />
+                           <span class="text-4xl font-semibold uppercase lg:text-5xl">coming</span> <br />
+                           <span class="text-4xl font-semibold uppercase lg:text-5xl">soon</span>
+                        </h1>
+                        <p class="text-desaturated-red text-sm lg:leading-relaxed">
+                           Hello fellow shoppers! We're currently building our new fashion store. 
+         Add your email below to stay up-to-date with announcements and our launch deals.
+                        </p>
+
+                        <form name="frmSub" class="frm-sub mt-8">
+                           <div>
+
+                              <div class="email-wrap relative border border-red-400 flex justify-between items-center rounded-3xl">
+                                 <input 
+                                    class="placeholder-desaturated-red bg-transparent text-sm py-3 px-4 outline-none w-8/12 appearance-none"
+                                    type="text" 
+                                    name="email"
+                                    placeholder="Email Address"
+                                 >
+                                 <div class="email-error-noti">
+                                    <img src="images/icon-error.svg" alt="">
+                                 </div>
+                                 <button 
+                                    class="base-apparel--btn top-0 bottom-0 rounded-3xl self-stretch -mt-0.5 -mr-0.5 -mb-0.5 w-16 shadow-md focus:outline-none" 
+                                    type="submit">
+                                    <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="12" height="20"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 1l8.836 8.836L1 18.671"/></svg>
+                                 </button>
+                              </div>
+                           
+                           <p class="email-error-msg text-red-400 text-xs text-left pl-6 py-2 pr-4 font-normal"></p>
+
+                           </div>
+                        </form>
+                     </div>
+
+                  </div>
+                  <!-- endcontent wrap -->
+
+               </div>   
+               <!-- end col-1 -->
+
+               <!-- col-2 -->
+               <div class="hidden md:block">
+                  <img class="" src="images/hero-desktop.jpg" alt="">
+               </div>
+               <!-- end col-2 -->
+
+         </div>
+         <!-- end row-1 -->
+        
+      </div>
+
+      <script type="module">
+         import '/base-apparel-coming-soon/baseApparelComingSoon.js';
+      </script>
+   </body>
+</html>
