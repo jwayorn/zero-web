@@ -5,6 +5,7 @@ module.exports = {
    root: 'src',
    build: {
       outDir: '../dist',
+      emptyOutDir: true,
       rollupOptions: {
          input: {
             main: resolve(__dirname, 'src/index.html'),
@@ -12,6 +13,8 @@ module.exports = {
             socialProofSection: resolve(__dirname, 'src/social-proof-section/index.html'),
             articlePreviewComponent: resolve(__dirname, 'src/article-preview-component/index.html'),
             baseApparelComingSoon: resolve(__dirname, 'src/base-apparel-coming-soon/index.html'),
+            introComponentWithSignupForm: resolve(__dirname, 'src/intro-component-with-signup-form/index.html'),
+            singlePriceGridComponent: resolve(__dirname, 'src/single-price-grid-component/index.html'),
          }
       }
    },
