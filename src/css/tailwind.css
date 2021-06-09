@@ -127,15 +127,15 @@
    .mail-error .email-error-noti { display: block; }
    .mail-error .email-error-msg { display: block; }
 
-   input:-webkit-autofill,
-   input:-webkit-autofill:hover, 
-   input:-webkit-autofill:focus,
-   textarea:-webkit-autofill,
-   textarea:-webkit-autofill:hover,
-   textarea:-webkit-autofill:focus,
-   select:-webkit-autofill,
-   select:-webkit-autofill:hover,
-   select:-webkit-autofill:focus 
+   .base-apparel input:-webkit-autofill,
+   .base-apparel input:-webkit-autofill:hover, 
+   .base-apparel input:-webkit-autofill:focus,
+   .base-apparel textarea:-webkit-autofill,
+   .base-apparel textarea:-webkit-autofill:hover,
+   .base-apparel textarea:-webkit-autofill:focus,
+   .base-apparel select:-webkit-autofill,
+   .base-apparel select:-webkit-autofill:hover,
+   .base-apparel select:-webkit-autofill:focus 
    {
    /* -webkit-box-shadow: 0 0 0 30px transparent inset !important; */
       border-radius: 24px;
@@ -146,7 +146,55 @@
       .base-apparel-bg {
          background-image: url(/base-apparel-coming-soon/images/bg-pattern-desktop.svg);
          background-repeat: no-repeat;
+         /* background-size: cover; */
+         background-position: center bottom;
       }
    }
 
+
+   /* Intro component with signup form */
+   .visibleLabel--off {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+   }
+
+   .bg-intro-desktop {
+      background-image: url(/intro-component-with-signup-form/images/bg-intro-desktop.png);
+      background-position: top center;
+      backkground-repeat: no-repeat;
+   }
+
+   .intro-call-to-action--shadow {
+      -webkit-box-shadow:1px 7px 0px 0px rgba(62,66,66,0.1);
+      -moz-box-shadow: 1px 7px 0px 0px rgba(62,66,66,0.1);
+      box-shadow: 1px 7px 0px 0px rgba(62,66,66,0.1);
+   }
+
+   .intro-input:focus {
+      @apply outline-none ring-1 ring-gray-600;
+   }
+
+   /* hidden error */
+   .error-icon, 
+   .error--msg {
+      display: none;
+   }
+
+   /* show error */
+   .error .error-icon{
+      display: inline-block;
+   }
+   .error .error--msg {
+      display: block;
+   }
+
+   /* Single price grid component */
+
+   
 }

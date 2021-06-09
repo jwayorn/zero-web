@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+   <title>Single price grid component</title>
+
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="../css/tailwind.css">
+</head>
+<body class="karla">
+   <section class="container mx-auto h-screen flex justify-center items-center bg-light-gray p-10">
+      <div class="row">
+         <div class="col">
+            <!-- pricing -->
+            <div class="max-w-156 mx-auto rounded-md overflow-hidden shadow-xl sm:grid sm:grid-cols-2">
+
+               <!-- saying -->
+               <div class="p-8 bg-white sm:col-span-2">
+                  <h2 class="text-cyan text-xl font-bold tracking-wide mb-5">Join our community</h2>
+                  <span class="inline-block text-bright-yellow font-bold mb-5">30-day, hassle-free money back guarantee</span>
+                  <p class="text-grayish-blue">Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are serious about honing their skills.</p>
+               </div>
+               <!-- end saying -->
+
+               <!-- price -->
+               <div class="bg-cyan p-8 text-light-gray sm:flex sm:flex-col sm:justify-around">
+                  <h3 class="text-lg mb-5 font-bold">Monthly Subscription</h3>
+                  <div class="mb-8">
+                     <p class="mb-1.5">
+                        <span class="inline-block text-white text-2xl font-bold align-middle mb-1">&dollar;29</span>&nbsp;&nbsp;<span class="inline-block align-middle opacity-60">per month</span>
+                     </p>
+                     <p class="">Full access for less than &dollar;1 a day</p>
+                  </div>
+                  
+                  <button class="inline-block w-full py-4 rounded-md bg-bright-yellow text-white shadow-lg font-bold">Sign Up</button>
+               </div>
+               <!-- end price -->
+
+               <!-- why us -->
+               <div class="bg-cyan bg-opacity-80 p-8 text-light-gray">
+                  <h3 class="text-lg mb-5 text-white font-bold">Why Us</h3>
+                  <p class="font-karla">
+  Tutorials by industry experts <br/>
+  Peer &amp; expert code review<br/>
+  Coding exercises<br/>
+  Access to our GitHub repos<br/>
+  Community forum<br/>
+  Flashcard decks<br/>
+  New videos every week
+                  </p>
+               </div>
+               <!-- end why us -->
+
+            </div>
+            <!-- end pricing -->
+         </div>
+      </div>
+   </section>
+</body>
+</html>

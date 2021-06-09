@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+   <title>Intro component with signup form</title>
+
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="../css/tailwind.css">
+
+</head>
+<body class="font-poppins">
+   
+   <div class="container mx-auto">
+      <!-- section -->
+         <section class="section bg-red-400 bg-intro-desktop">
+            <!-- row1 -->
+            <div class="row py-20 px-6 text-center md:grid md:grid-cols-2 md:gap-5 md:px-12 xl:px-20 desktop:px-40">
+
+               <!-- col-1 -->
+               <div class="col md:flex md:flex-col md:justify-center">
+                  <!-- heading -->
+                  <div class="text-white mb-12 md:mb-0 md:text-left">
+                     <h1 class="text-3xl font-semibold mb-5 md:text-4xl lg:text-5xl">Learn to code by watching others</h1>
+                     <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+                        but understanding how developers think is invaluable.</p>
+                  </div>
+                  <!-- end heading -->
+
+                  
+               </div>
+               <!-- end col-1 -->
+
+               <!-- col-2 -->
+               <div class="col">
+
+                  <!-- call to action -->
+                  <div class="bg-intro-blue rounded-xl text-white px-16 py-6 text-sm leading-6 mb-4 intro-call-to-action--shadow">
+                     <span class="font-semibold">Try it free 7 days</span> <span>then $20/mo. thereafter</span>
+                  </div>
+                  <!-- end call to action -->
+
+                  <!-- signup form -->
+                  <form
+                  class="p-7 bg-white rounded-lg intro-call-to-action--shadow" 
+                  name="signupForm"
+                  novalidate
+                  >
+                     <div class="relative text-right">
+                        <label class="visibleLabel--off" for="firstName"></label>
+                        <input class="intro-input w-full font-medium text-lg border py-4 px-5 rounded-md" type="text" name="first_name" id="firstName" placeholder="First Name">
+                        <!-- validate error icon -->
+                        <img class="error-icon absolute right-2 top-5" src="images/icon-error.svg" alt="icon error">
+                        <!-- Error msg -->
+                        <span class="error--msg text-red-500 text-xs  leading-7 italic"></span>
+                     </div>
+                        
+                     <div class="relative text-right mt-3">
+                        <label class="visibleLabel--off" for="lastName"></label>
+                        <input class="intro-input w-full font-medium text-lg border py-4 px-5 rounded-md" type="text" name="last_name" id="lastName" placeholder="Last Name">
+                        <!-- validate error icon -->
+                        <img class="error-icon absolute right-2 top-5" src="images/icon-error.svg" alt="icon error">
+                        <!-- Error msg -->
+                        <span class="error--msg text-red-500 text-xs  leading-7 italic"></span>
+                     </div>
+
+                     <div class="relative text-right mt-3">
+                        <label class="visibleLabel--off" for="email"></label>
+                        <input class="intro-input w-full font-medium text-lg border py-4 px-5 rounded-md" type="email" name="email" id="email" placeholder="Email Address">
+                        <!-- validate error icon -->
+                        <img class="error-icon absolute right-2 top-5" src="images/icon-error.svg" alt="icon error">
+                        <!-- Error msg -->
+                        <span class="error--msg text-red-500 text-xs  leading-7 italic"></span>
+                     </div>
+
+                     <div class="relative text-right mt-3">
+                        <label class="visibleLabel--off" for="pwd"></label>
+                        <input type="password" name="pwd" id="pwd" class="intro-input w-full font-medium text-lg border py-4 px-5 rounded-md" placeholder="Password">
+                        <!-- validate error icon -->
+                        <img class="error-icon absolute right-2 top-5" src="images/icon-error.svg" alt="icon error">
+                        <!-- Error msg -->
+                        <span class="error--msg text-red-500 text-xs  leading-7 italic"></span>
+                     </div>
+                        
+                     <div class="mt-3">
+                        <button class="block w-full uppercase bg-green-500 hover:bg-green-400 text-white py-4 rounded-md text-center intro-call-to-action--shadow focus:outline-none">Claim Your Free Trial</button>
+                     </div>
+
+                     <p class="text-xs text-grayish-blue-2 mt-2">
+                        By clicking the button, you are agreeing to our <a href="#" class="text-red-400 font-medium text-xs">Terms and Services</a>
+                     </p>
+                  </form>
+                  <!-- signup form -->
+
+               </div>
+               <!-- end col-2 -->
+
+            </div>
+            <!-- end row1 -->
+         </section>
+      <!-- end section -->
+
+   </div>
+
+   <script type="module">
+      import '/intro-component-with-signup-form/app.js';
+   </script>
+</body>
+</html>

@@ -7,6 +7,8 @@ module.exports = {
       'spartan': ['Spartan', 'sans-serif'],
       'manrope': ['Manrope', 'sans-serif'],
       'josefin-sans': ['Josefin Sans', 'sans-serif'],
+      'poppins': ['Poppins', 'sans-serif'],
+      'karla': ['Karla', 'sans-serif'],
     },
     extend: {
       screens: {
@@ -14,7 +16,7 @@ module.exports = {
         'desktop': '1440px',
       },
       colors:{
-        // FAQ-accordion-card
+        /* FAQ-accordion-card */
         'very-dark-desaturated-blue': 'hsl(238, 29%, 16%)', //text color
         'soft-red': 'hsl(14, 88%, 65%)',                    // text color
         'very-dark-grayish-blue': 'hsl(237, 12%, 33%)',     // text color
@@ -23,24 +25,35 @@ module.exports = {
         'soft-blue': 'hsl(240, 73%, 65%)',                  // bg gradient
         'light-grayish-blue': 'hsl(240, 5%, 91%)',          // Dividers
 
-        // Social proof section
+        /* Social proof section */
         'very-dark-magenta': 'hsl(300, 43%, 22%)',
         'soft-pink': 'hsl(333, 80%, 67%)',
         'dark-grayish-magenta': 'hsl(303, 10%, 53%)',
         'light-grayish-magenta': 'hsl(300, 24%, 96%)',
 
-        // article-preview-component
+        /* article-preview-component */
         'very-dark-grayish-blue-2': 'hsl(217, 19%, 35%)',
         'disaturated-dark-blue': 'hsl(214, 17%, 51%)',
         'grayish-blue': 'hsl(212, 23%, 69%)',
         'light-grayish-blue': 'hsl(210, 46%, 95%)',
 
-        // base-apparel-coming-soon
+        /* base-apparel-coming-soon */
          // ### Primary
         'desaturated-red': 'hsl(0, 36%, 70%)',
         'soft-red': 'hsl(0, 93%, 68%)',
          // ### Neutral
          'dark-grayish-red': 'hsl(0, 6%, 24%)',
+
+         /* Intro component with signup form */
+         'dark-blue': 'hsl(249, 10%, 26%) ',
+         'intro-blue': 'hsl(248, 32%, 49%)',
+         'grayish-blue-2': 'hsl(246, 25%, 77%)',
+
+        /** Singlle price grid component */
+        'cyan': 'hsl(179, 62%, 43%)',
+        'bright-yellow': 'hsl(71, 73%, 54%)',
+        'light-gray': 'hsl(204, 43%, 93%)',
+        'grayish-blue-3': 'hsl(218, 22%, 67%)',
 
       },
       fontSize: {
@@ -50,6 +63,7 @@ module.exports = {
       maxWidth:{
         'mobile': '23.4375rem',
         'desktop': '90rem',
+        '156': '39rem',
         '183': '45.75rem',
       },
       minWidth:{
