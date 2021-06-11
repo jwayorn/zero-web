@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+   <title>Ping coming soon page</title>
+
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="../css/tailwind.css">
+</head>
+<body>
+   <section class="container mx-auto text-xl">
+      <div class="row max-w-3xl mx-auto p-14">
+         <div class="col">
+            
+            <div class="text-center mb-8">
+               <a class="inline-block" href="/zero-web/ping-coming-soon-page/">
+                  <img class="" src="images/logo.svg" alt="ping logo">
+               </a>
+            </div>
+            
+            <div class="text-center mb-7 md:mb-9">
+               <h1 class="text-ping-gray text-2xl font-light mb-3 md:text-5xl md:mb-5">We are launching <span class="text-ping-very-dark-blue font-bold">soon!</span></h1>
+               <p class="text-ping-very-dark-blue text-xs md:text-xl">Subscribe and get norified</p>
+            </div>
+
+            <form class="frm-sub mb-9 md:flex md:justify-center" name="frmSub" novalidate>
+               <div class="mb-3.5 md:w-3/4 md:mr-3">
+                  <div class="">
+                     <input 
+                     class="ping-email border-2 border-ping-pale-blue w-full rounded-3xl py-2 px-7 placeholder-ping-pale-blue text-sm font-light focus:outline-none md:py-4" 
+                     placeholder="Your email address..."
+                     type="email" 
+                     name="email" 
+                     id="email"
+                     >
+                     <p class="error--msg text-red-400 text-xs text-center italic p-1 md:text-left md:pl-5">Pleaseprovide a valid email address</p>
+                  </div>
+               </div>
+               <div class="md:w-1/4">
+                  <button class="bg-ping-blue text-white text-sm shadow-lg font-semibold rounded-3xl w-full py-2.5 hover:bg-opacity-80 md:py-4 focus:outline-none">Notify Me</button>
+               </div>
+            </form>
+
+            <img src="images/illustration-dashboard.png" alt="coming soon image">
+         </div>
+      </div>
+   </section>
+   
+   <footer>
+      <!-- social -->
+      <div class="text-center mb-8">
+         <!-- fb -->
+         <a class="inline-block text-ping-blue rounded-full border p-1 hover:bg-ping-blue hover:text-white" href="#">
+            <svg class="h-5 w-5 fill-current"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
+         </a>
+         <!-- tw -->
+         <a class="inline-block text-ping-blue rounded-full border p-1 hover:bg-ping-blue hover:text-white" href="#">
+            <svg class="h-5 w-5 fill-current"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg>
+         </a>
+         <!-- ig -->
+         <a class="inline-block text-ping-blue rounded-full border p-1 hover:bg-ping-blue hover:text-white" href="#">
+            <svg class="h-5 w-5"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
+         </a>
+      </div>
+
+      <!-- copyright -->
+      <div class="text-xs text-center text-ping-gray">
+         <span>&copy; Copyright Ping. All rights reserved.</span>
+      </div>
+   </footer>
+
+   <script type="module">
+      import '/ping-coming-soon-page/app.js';
+   </script>
+</body>
+</html>

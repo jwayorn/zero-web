@@ -9,6 +9,9 @@ module.exports = {
       'josefin-sans': ['Josefin Sans', 'sans-serif'],
       'poppins': ['Poppins', 'sans-serif'],
       'karla': ['Karla', 'sans-serif'],
+      'libre-franklin': ['Libre Franklin', 'sans-serif'],
+      'huddle-header-font': ['Poppins', 'sans-serif'],
+      'huddle-body-font': ['Open Sans', 'sans-serif'],
     },
     extend: {
       screens: {
@@ -55,6 +58,17 @@ module.exports = {
         'light-gray': 'hsl(204, 43%, 93%)',
         'grayish-blue-3': 'hsl(218, 22%, 67%)',
 
+        /** Ping coming soon page */
+        'ping-blue': 'hsl(223, 87%, 63%)',
+        'ping-pale-blue': 'hsl(223, 100%, 88%)',
+        'ping-light-red': 'hsl(354, 100%, 66%)',
+        'ping-gray': 'hsl(0, 0%, 59%)',
+        'ping-very-dark-blue': 'hsl(209, 33%, 12%)',
+
+        /** huddle landing page with single introductory section */
+        'huddle-violet': 'hsl(257, 40%, 49%)',
+        'huddle-soft-magenta': 'hsl(300, 69%, 71%)',
+
       },
       fontSize: {
         'xxs': '0.8125rem', //13px
@@ -96,6 +110,11 @@ module.exports = {
         '-left-53vw': '-53vw',
         '-top-50vh': '-50vh',
       },
+      backgroundImage: theme => ({
+        'huddle-mobile': "url('/huddle-landing-page-with-single-introductory-section/images/bg-mobile.svg')",
+        'huddle-desktop': "url('/huddle-landing-page-with-single-introductory-section/images/bg-desktop.svg')",
+      }),
+
     },
   },
   variants: {

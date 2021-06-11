@@ -15,6 +15,9 @@ module.exports = {
             baseApparelComingSoon: resolve(__dirname, 'src/base-apparel-coming-soon/index.html'),
             introComponentWithSignupForm: resolve(__dirname, 'src/intro-component-with-signup-form/index.html'),
             singlePriceGridComponent: resolve(__dirname, 'src/single-price-grid-component/index.html'),
+            pingComingSoonPage: resolve(__dirname, 'src/ping-coming-soon-page/index.html'),
+            huddleLandingPageWithSingleIntroductorySection: resolve(__dirname, 'src/huddle-landing-page-with-single-introductory-section/index.html'),
+            
          }
       }
    },
